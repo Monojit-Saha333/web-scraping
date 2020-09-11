@@ -1,0 +1,10 @@
+
+{% extends 'index.html' %}
+{% block body %}
+    <div class="container">
+        <form action="/result" method="POST">
+            <input class="field" type="text" name="content"><br>
+            <input id="button" type="submit">
+        </form>
+    </div>
+{% endblock %}

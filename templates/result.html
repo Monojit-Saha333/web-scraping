@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+{% block  body %}
+    <div class="table-container">
+        <table border="0.1" cellspacing="0" width="100%">
+            <tr>
+                <th>Product</th>
+                <th>Customer Name</th>
+                <th>Rating</th>
+                <th>Comment Heading</th>
+                <th>Comments</th>
+            </tr>
+
+            {% for review in  reviews %}
+            <tr>
+                <td>{{review.product}}</td>
+                <td>{{review.customer_name}}</td>
+                <td>{{review.Rating}}</td>
+                <td>{{review.comment_heading}}</td>
+                <td>{{review.comments}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+{% endblock %}
+
+
+
+product':search_string,
+                     'customer_name':customer_name,
+                     'Rating':rating,
+                     'comment_heading':comment_heading,
+                     'comments':comment
